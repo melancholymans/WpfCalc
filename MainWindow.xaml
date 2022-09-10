@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfCalc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="294" Width="259">
     <Grid>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="14,24,0,0" TextWrapping="Wrap" Text="{Binding Path=Label,Mode=OneWay}" VerticalAlignment="Top" Width="192" Height="35" TextAlignment="Right"/>
+        <Button x:Name="button1" Content="/" HorizontalAlignment="Left" Margin="131,66,0,0" VerticalAlignment="Top" Width="34" Height="34" Background="#FF52595F" Foreground="#FFF9F6F6"/>
+        <Button x:Name="button5" Content="8" HorizontalAlignment="Left" Margin="53,66,0,0" VerticalAlignment="Top" Width="34" Height="34" Click="Num_Click"/>
+        <Button x:Name="button9" Content="C" HorizontalAlignment="Left" Margin="170,66,0,0" VerticalAlignment="Top" Width="34" Height="34" Background="#FF52595F" Foreground="#FFF9F6F6"/>
+        <Button x:Name="button10" Content="7" HorizontalAlignment="Left" Margin="14,66,0,0" VerticalAlignment="Top" Click="Num_Click" Width="34" Height="34" RenderTransformOrigin="0.659,2.864"/>
+        <Button x:Name="button11" Content="9" HorizontalAlignment="Left" Margin="92,66,0,0" VerticalAlignment="Top" Width="34" Height="34" Click="Num_Click"/>
+        <Button x:Name="button" Content="4" HorizontalAlignment="Left" Margin="14,105,0,0" VerticalAlignment="Top" Width="34" Height="34" Click="Num_Click"/>
+        <Button x:Name="button2" Content="5" HorizontalAlignment="Left" Margin="53,105,0,0" VerticalAlignment="Top" Width="34" Height="34" Click="Num_Click"/>
+        <Button x:Name="button3" Content="6" HorizontalAlignment="Left" Margin="92,105,0,0" VerticalAlignment="Top" Width="34" Height="34" Click="Num_Click"/>
+        <Button x:Name="button4" Content="1" HorizontalAlignment="Left" Margin="14,144,0,0" VerticalAlignment="Top" Width="34" Height="34" Click="Num_Click"/>
+        <Button x:Name="button6" Content="2" HorizontalAlignment="Left" Margin="53,144,0,0" VerticalAlignment="Top" Width="34" Height="34" Click="Num_Click"/>
+        <Button x:Name="button7" Content="3" HorizontalAlignment="Left" Margin="92,144,0,0" VerticalAlignment="Top" Width="34" Height="34" Click="Num_Click"/>
+        <Button x:Name="button8" Content="0" HorizontalAlignment="Left" Margin="14,183,0,0" VerticalAlignment="Top" Height="34" Width="73" Click="Num_Click"/>
+        <Button x:Name="button12" Content="." HorizontalAlignment="Left" Margin="92,183,0,0" VerticalAlignment="Top" Height="34" Width="34" Click="Num_Click"/>
+        <Button x:Name="button13" Content="*" HorizontalAlignment="Left" Margin="131,105,0,0" VerticalAlignment="Top" Width="34" Height="34"/>
+        <Button x:Name="button14" Content="-" HorizontalAlignment="Left" Margin="131,144,0,0" VerticalAlignment="Top" Width="34" Height="34"/>
+        <Button x:Name="button15" Content="+" HorizontalAlignment="Left" Margin="131,183,0,0" VerticalAlignment="Top" Width="34" Height="34"/>
+        <Button x:Name="button16" Content="=" HorizontalAlignment="Left" Margin="170,105,0,0" VerticalAlignment="Top" Height="112" Width="34"/>
 
     </Grid>
 </Window>

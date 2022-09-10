@@ -20,9 +20,20 @@ namespace WpfCalc
     /// </summary>
     public partial class MainWindow : Window
     {
+        //readonly CalcViewModel ViewModel = new();
+        CalcViewModel ViewModel = new CalcViewModel();
+
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this.ViewModel;
+        }
+
+
+        private void Num_Click(object sender, RoutedEventArgs e)
+        {
+            var btn = (Button)sender;
+            this.ViewModel.NumCommand(btn.Content);
         }
     }
 }
