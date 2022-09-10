@@ -25,5 +25,5 @@ namespace WpfCalc
             PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(name));
         }
     }
-
+    public string Result { get; private set; } = "";
 }
